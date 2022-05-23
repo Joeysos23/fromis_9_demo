@@ -1,47 +1,136 @@
-<style>
-  body{
-    margin: 0;
-  }
-  a{
-    color:black;
-    text-decoration:none;
-  }
-  h1{
-    font-size:45px;
-    text-align:center;
-    padding:20px;
-    margin:0;
-    border-bottom:1px solid gray;
-  }
-  img{
-    padding:20px;
-  }
-  ol{
-    border-right:1px solid gray;
-    width:100px;
-    margin:0;
-    padding:20px;
-    padding-left:32px;
-  }
-  #grid{
-    display:grid;
-    grid-template-columns: 150px 1fr;
-  }
-  #grid ol{
-    padding-left:32px;
-  }
-  #grid #article{
-    padding-left: 25px;
-  }
-  @media(max-width:800px){
-    #grid{
-      display:block; /*block level*/
-    }
-    ol{
-     border-right:none;
-    }
-    h1{
-      border-bottom:none;
-    }
-  }
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+li,a{
+  font-family:"Montserrat",sans-serif;
+  font-weight:500;
+  font-size:16px;
+  color:#edf0f1;
+  text-decoration:none;
+}
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: :center;
+  padding:10px 10%;
+  background-color: #24252A;
+}
+video{
+  height: auto;
+  width:100%;
+}
+
+.logo{
+  height:30px;
+  width:30px;
+  background-color: #C0C0C0;
+  border:none;
+  border-radius: 50px;
+}
+
+.nav_links{//ul
+    list-style:none;
+}
+
+.nav_links li{
+  padding:4px 25px;
+  display:inline-block;
+}
+
+.nav_links li a:hover{
+  color:#0088a9;
+}
+
+button{
+  padding:9px 25px;
+  background-color:rgba(0,136,169,1);
+  border:none;
+  border-radius:50px;
+}
+
+button:hover{
+  background-color:rgba(0,136,169,0.8);
+}
+
+.wall{
+  align-items: center;
+  position:relative;
+}
+
+.wall_text{
+  padding: 15px;
+  text-align: center;
+  position:absolute;
+  top:10%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.wall_text h1{
+  font-size:60px;
+}
+
+.wall_text p{
+  font-size:30px;
+  padding:5px;
+}
+
+.wall_paper{
+  height:auto;
+  width:100%;
+}
+
+#more{
+  color:rgba(0,136,169,0.8);
+  font-size:15px;
+}
+
+#more:hover{
+  text-decoration:underline;
+}
+/**/
+.wall_2{
+  align-items: center;
+  position:relative;
+}
+
+.wall_text_2{
+  padding: 15px;
+  text-align: center;
+  position:absolute;
+  top:18%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.wall_text_2 h1{
+  font-size:60px;
+}
+
+.wall_text_2 p{
+  font-size:30px;
+  padding:5px;
+}
+
+.wall_paper_2{
+  display:block;
+  margin:auto;
+
+  text-align: center;
+  height:auto;
+  width:70%;
+}
+
+#more_2{
+  color:rgba(0,136,169,0.8);
+  font-size:15px;
+}
+
+#more_2:hover{
+  text-decoration:underline;
+}
+/**/
